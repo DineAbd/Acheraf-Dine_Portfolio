@@ -115,7 +115,7 @@ a, .btn{
     
 }
 
-#project-specification1, #project-specification2 {
+#project-specification1, #project-specification2, #project-specification21 {
     height: 100vh;
     display: flex;
     justify-content: center;

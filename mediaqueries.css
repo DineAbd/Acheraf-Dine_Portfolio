@@ -36,8 +36,8 @@
     }
 
     #about{
-        width: 30vh;
-        margin: auto;
+        width: 60vh;
+        margin: 10vh auto;
         align-items: center;
     }
 
@@ -73,11 +73,14 @@
         font-weight: bold;
     }
 
-    #project{ 
-        margin: auto;
-        margin-top: 20vh;
+    #project{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         align-items: center;  
-        width: 30vh;   
+        margin-top: 150vh;
+        max-width: 80vh;
+        
     }
 
     .icon-arrow{
@@ -87,6 +90,7 @@
     .project-wrapper {
         flex-direction: column;
         height: auto;
+        width: auto;
     }
 
     /* Stack the project cards vertically and resize them */
@@ -100,7 +104,7 @@
     }
 
     .project-card {
-        width: 100%;
+        width: 90%;
         margin: 10px 0;
         border-radius: 1rem;
         box-shadow: none;
@@ -114,10 +118,7 @@
 
     .project-card > .project-row {
         flex-direction: column;
-        text-align: center;
-        width: 60vh;
-        height: 25vh;
-        position: relative;
+        height: 30vh;
     }
 
     .project-icon {
@@ -126,43 +127,44 @@
         margin: 0 auto 10px;
     }
 
-    .project-description {
-        width: 100vh;
-        max-width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-
     /* Font size adjustments */
     .project-description h4 {
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: center;
-        padding: 5px;
         font-weight: bolder;
     }
 
     .project-description p {
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         color: #FEFFEC;
         padding: 5px;
     }
 
     .project-card > .project-row > .project-icon{
-        width: 80px;
-        height: 80px;
+        width: 6vh;
+        height: 6vh;
     }
     
     .demo-icon{
-        font-size: 64px !important;
+        font-size: 25px !important;
     }
 
-    .project-description{
-        position: absolute;
-        min-height: 250px;
+    .project-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        width: 50%;
         margin: 0 auto;
-        top: 45%;
-        left: 12.5%;
+
     }
+
+    .project-container input:checked + label{
+        width: 90%;
+    }
+
+
+
     
 
 
@@ -176,7 +178,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 40vh; 
+        margin-top: 300vh; 
         margin-bottom: 40vh;       
     }
 
@@ -211,7 +213,7 @@
     }
 
     .interest-card h5, .interest-card p{
-        font-size: 1.5rem
+        font-size: 1rem
     }
     
     #contact{
@@ -234,6 +236,20 @@
 
     .icon-arrow1{
         display: none;
+    }
+
+    footer{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+    footer p{
+        margin: 0 auto;
+        padding: auto;
+    }
+
+    .nav-links-container li{
+        padding: 0;
     }
 
     
