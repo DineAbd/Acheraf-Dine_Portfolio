@@ -36,7 +36,7 @@
     }
 
     #about{
-        width: 60vh;
+        width: 70%;
         margin: 10vh auto;
         align-items: center;
     }
@@ -78,7 +78,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;  
-        margin-top: 150vh;
+        margin-top: 100vh;
         max-width: 80vh;
         
     }
@@ -178,7 +178,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 300vh; 
+        margin-top: 220vh; 
         margin-bottom: 40vh;       
     }
 
