@@ -1,0 +1,253 @@
+@media screen and (max-width: 1000px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav{
+        display: flex;
+    }
+
+    #hero{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 20vh;
+    }
+
+
+    .photo{
+        display: flex;
+        justify-content: center;
+        width: 50vh;
+        height: 40vh;
+        align-items: center;
+    }
+
+    .photo img{
+        width: 50%;
+        height: 90%;
+        border-radius: 30%;
+    }
+
+    #about{
+        width: 30vh;
+        margin: auto;
+        align-items: center;
+    }
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .skill-header{
+        width: 100%;
+    }
+
+    .icon-arrow{
+        display: none;
+    }
+
+    .skills{
+        display: none;
+    }
+
+    .skills-mobile{
+        width: 100%;
+        display: flex;
+        padding: 30px 0px;
+        white-space: wrap;
+    }
+
+    .btn-skill-mobile{
+        margin: 10px;
+        padding: 0.3rem;
+        border: rgb(81, 81, 81) solid 0.05rem;
+        background-color: white;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+
+    #project{ 
+        margin: auto;
+        margin-top: 20vh;
+        align-items: center;  
+        width: 30vh;   
+    }
+
+    .icon-arrow{
+        display: none;
+    }
+
+    .project-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Stack the project cards vertically and resize them */
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;   
+        width: 80%;     
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 1rem;
+        box-shadow: none;
+        transition: none;
+        
+    }
+
+    .project-container input:checked + label {
+        width: 100%; /* Full width for selected card */
+    }
+
+    .project-card > .project-row {
+        flex-direction: column;
+        text-align: center;
+        width: 60vh;
+        height: 25vh;
+        position: relative;
+    }
+
+    .project-icon {
+        width: 80px; /* Smaller icon size */
+        height: 80px;
+        margin: 0 auto 10px;
+    }
+
+    .project-description {
+        width: 100vh;
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Font size adjustments */
+    .project-description h4 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 5px;
+        font-weight: bolder;
+    }
+
+    .project-description p {
+        font-size: 1.5rem;
+        color: #FEFFEC;
+        padding: 5px;
+    }
+
+    .project-card > .project-row > .project-icon{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .demo-icon{
+        font-size: 64px !important;
+    }
+
+    .project-description{
+        position: absolute;
+        min-height: 250px;
+        margin: 0 auto;
+        top: 45%;
+        left: 12.5%;
+    }
+    
+
+
+    /* Hide tooltip on small screens */
+    [data-tooltip]::before {
+        display: none;
+    }
+
+    #interest{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40vh; 
+        margin-bottom: 40vh;       
+    }
+
+    .interest-container{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    
+    .interest-card-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        margin: 0;
+    }
+
+    .interest-card{
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        font-weight: 300;
+        padding: 1.5rem;
+        border-radius: 2rem;
+        flex: 1;
+        background-color: white;
+        border: rgb(53, 53, 53) 0.1rem solid;
+        border-color: rgb(163, 163, 163);
+
+    }
+
+    .interest-card h5, .interest-card p{
+        font-size: 1.5rem
+    }
+    
+    #contact{
+        margin-top:30vh ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-info-upper-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .icon-arrow1{
+        display: none;
+    }
+
+    
+
+
+
+    
+
+
+
+    
+    
+    
+}
+
+
+

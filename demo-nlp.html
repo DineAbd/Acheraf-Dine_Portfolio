@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine Abd - Portofolio</title>
+    <link rel="stylesheet" href="styles-demo.css">
+    <link rel="stylesheet" href="mediaqueries-demo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper1">
+        <div class="project-header">
+            <h4>Leveraging NLP</h4>
+            <p>Text Classification for Cyberbullying Prevention</p>
+        </div>
+    </div>
+
+    <div class="section spec1 hidden" id="project-specification1">
+        <div class="project-specification ">
+            <h4 class="title">Project Description</h4>
+            <p class="paragraph">Due to the emergence of new information and communication technologies, social networks
+                are becoming more and more essential in life in society. Platforms such as Instagram, Facebook, Twitter
+                and now X have integrated our daily lives and profoundly changed various aspects of our existence. They
+                have revolutionized the way we communicate, share information, and connect to the world around us. The
+                rise of social media has brought multiple benefits, but it has also brought major challenges, such as
+                the ever-present problem of cyberbullying. The aim of this article is to examine the automatic detection
+                of cyberbullying on social media using different natural language processing (NLP) techniques.</p>
+        </div>
+
+        <div class="expand-icon">
+            <p onclick="location.href='#project-specification11'">See More </p>
+            <i class="material-icons" onclick="location.href='#project-specification11'">keyboard_arrow_down </i>
+        </div>
+    </div>
+
+    <div class="section spec1 hidden" id="project-specification11">
+        <div class="project-specification ">
+            <h4 class="title">Adopted Methodology</h4>
+            <p class="paragraph">To segregate tweets into distinct cyberbullying categories, we use different
+                classification models such as Random Forest, Support Vector Machine (SVM), Naive Bayes, Long Short-Term
+                Memory (LSTM), and bidirectional encoder representations of transformers (BERT). The methodology on
+                which we based this study is relatively simple. It largely consists of evaluating the capacity of the
+                chosen models to solve the problem of classifying textual content from the social network X. To do this,
+                We started by gathering the Data needed for our study. Then we explore the data to understand its
+                structure and key characteristics, and prepare the data by cleaning and formatting it correctly. we used
+                NLP to create a set of data understandable by intelligence models artificial. We exploited several word
+                processing techniques in order to develop features that these models will use.Finally we build, train
+                and evaluate the models to check their performance. The following figure sums up more clearly the
+                general methodology we adopted.</p>
+            <div class="fig-nlp">
+                <img src="assets\nlp-methodology.png" alt="Methodology">
+            </div>
+        </div>
+    </div>
+
+    <div class="section spec1 hidden" id="project-specification12">
+        <div class="project-specification ">
+            <h4 class="title">Data collection & Exploration</h4>
+            <p class="paragraph">The dataset used for this study comes from a study published in 2020 IEEE
+                InternationalConference on Big Data (Big Data). This dataset is structured in two columns 'tweet_text'
+                and 'cyberbullying_type' containing respectively the tweet, message published on the Twitter platform
+                andthe label assigned to the corresponding tweet. The records were automatically generated with the help
+                of a semi-supervised online Dynamic Query Expansion process to extract data points of each class from
+                Twitter. The use of that framework aid in solving the unbalanced nature of the existing cyberbullying
+                dataset. It contains precisely 47692 tweets labelled according to the class of cyberbullying:
+                Age,Ethnicity, Gender, Religion, Other type of Cyberbullying and Not Cyberbullying. The data has been
+                balanced in order to contain approximately 8000 records of each class as shown in the following figure.
+                Thus, each class is evenly represented in the dataset, which prevent the models from being biased.</p>
+            <div class="fig-nlp">
+                <img src="assets\nlp-distribution.png" alt="classes distribution">
+            </div>
+        </div>
+    </div>
+
+    <div class="section spec1 hidden" id="project-specification12">
+        <div class="project-specification ">
+            <h4 class="title">Data Preprocessing</h4>
+            <p class="paragraph">
+                Preprocessing involves the steps taken to prepare raw data for further analysis or input into a machine
+                learning model. These steps are crucial for ensuring that the data is in a clean and usable format. Our
+                preprocessing steps include the removal of duplicates from the dataset, the elimination words that may
+                not carry significant meaning for the analysis like usernames, links, stop words, irrelevant twitter
+                specific jargon words, and some informal language words. Furthermore, We normalized the tweets by
+                converting them into lowercase letters in order to avoid sparsity. And Finally, we decide to apply two
+                crucial text preprocessing steps that offer several advantages in text classification tasks. These are
+                Tokenization and Lemmatization. Regarding the column containing the type of cyberbullying, we have
+                chosen to work with the remaining classes after eliminating the other cyberbullying class because it is
+                too broad, has too many categories in it, and might lowers the accuracy of the next prediction models.
+                Then we encode the remaining types for multiclassification problem in order to prepare them for the
+                models. The data et in then divide into training, validation set.
+            </p>
+            <div class="fig-nlp">
+                <img src="assets\nlp-preprocess.png" alt="Data preprocessing figure">
+            </div>
+        </div>
+    </div>
+
+    <div class="section spec1 hidden" id="project-specification12">
+        <div class="project-specification ">
+            <h4 class="title">Features extraction</h4>
+            <p class="paragraph">
+                For this study we rely on five models namely Naïve Bayes, The Support Vector Classification, Random
+                Forest, Long Short Term Memory, and BERT Feature extraction from text involves transforming textual data
+                into numerical features that machine learning algorithms can understand. For the first three models, we
+                use Term Frequency-Inverse Document Frequency (TF-IDF). It is a traditional method used in natural
+                language processing to convert text data into numerical features. Those feature are then fed to the
+                models for training. Regarding the LSTM, the features extraction starts with an embedding layer which
+                converts words to dense vectors. Follows up the LSTM Layer to capture temporal dependencies in the text
+                sequences. Finally we add a neural networks to perform the classification. Features extraction using the
+                BERT model involves leveraging the pre-trained BERT model to obtain embeddings or representations of
+                text that can be used. These embeddings capture the contextual meaning of words in the input text.
+            </p>
+            <div class="empty">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section spec1 hidden" id="project-specification12">
+        <div class="project-specification ">
+            <h4 class="title">Data Preprocessing</h4>
+            <p class="paragraph">
+                The Accuracy observed for each model are presented in the following table. As indicated in the table, we
+                achieve excellent results. Taking into account accuracy, the majority of models provide percentages
+                beyond 90%. With the exception of Naive Bayes which gives an accuracy of 85%, the models of SVC, LSTM,
+                and BERT all give an accuracy of 93%. Only the accuracy of the Random Forest peaks at 94%. This
+                demonstrates the ability of ensemble models to be able to respond to the problem of text classification
+                relating to the detection of cyberbullying in texts published on social networks.
+            </p>
+            <div class="fig-nlp">
+                <img src="assets\nlp-results.png">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section hidden" id="project-specification2">
+        <div class="project-specification">
+            <h4 class="title2">Highlighted Skills </h4>
+
+            <div class="container">
+
+                <div class="skills-section">
+                    <div class="skill-card">
+                        <h2>Natural Language Processing (NLP) Expertise</h2>
+                        <p>Demonstrating proficiency in text preprocessing techniques such as tokenization,
+                            lemmatization, stop word removal, and handling slang for tweet data.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h2>Model Building and Evaluation</h2>
+                        <p>Ability to implement and compare different machine learning and deep learning models,
+                            including Naive Bayes, Support Vector Machine, Random Forest, LSTM, and BERT.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h2>Feature Engineering and Selection</h2>
+                        <p>Skill in transforming raw text data into meaningful features with TF-IDF and selecting the
+                            most relevant ones for each model to improve performance.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h2>Hyperparameter Tuning and Optimization</h2>
+                        <p>Proficiency in optimizing models through hyperparameter tuning, which ensures each algorithm
+                            operates at its highest potential.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h2>Data Analysis and Visualization</h2>
+                        <p>Expertise in analyzing model performance metrics such as accuracy, precision, recall, and
+                            visualizing key insights through plots and reports.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h2>Project Management and Problem-Solving</h2>
+                        <p>Ability to manage a full project lifecycle, from data collection to deployment, while solving
+                            specific challenges related to classifying problem</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="return">
+            <a href="index.html#project"><i class="material-icons">reply</i> Go back</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
