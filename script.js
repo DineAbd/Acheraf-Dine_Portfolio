@@ -8,5 +8,5 @@ function toggleMenu() {
 
 
 function openResume(){
-    window.open('assets/CV-ABOUDOU _Acheraf_Dine-Fr.pdf');
+    window.open('assets/CV-ABOUDOU_Acheraf_Dine-En.pdf');
 }
